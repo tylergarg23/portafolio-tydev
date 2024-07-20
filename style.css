@@ -1,0 +1,288 @@
+/*
+    Theme Name: Tyler Dev
+    Theme URI: 
+    Author: Tyler Oscar García Rodríguez
+    Author URI: http://twitter.com/
+    Description: Theme Diseñado para el Portafolio
+    Version: 1.0
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Tags: Portafolio, Trabajos, flexbox, css grid, mobile first
+    Text Domain: tylerdev
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /** Fuentes **/
+    --fuente-principal: 'Saira', sans-serif;
+    --fuente-headings: 'Raleway', sans-serif;
+
+    /** Colores **/
+    --color-principal: linear-gradient(180deg, rgba(92, 52, 105, 1) 20%, rgba(26, 13, 20, 1) 100%);
+    --color-secundario: #FFE15B;
+    --blanco: #fff;
+    --gris-claro: #ebebeb;
+    --gris-oscuro: #141c3a;
+}
+
+html {
+    box-sizing: border-box;
+    /* 10 px = 1rem */
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 2;
+    margin: 0;
+}
+
+/** Headings **/
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--fuente-headings);
+    margin: 0 0 0 0;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+}
+
+h3 {
+    font-size: 3.6rem;
+}
+
+h4 {
+    font-size: 2.1rem;
+}
+
+/** Globales **/
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 1px solid;
+}
+
+.imagen-avatar {
+    margin-bottom: 3rem;
+}
+
+.contenedor {
+    width: min(95%, 140rem);
+    margin: 0 auto;
+}
+
+.contenido-centrado {
+    width: min(95%, 120rem);
+}
+
+/** Utilidades **/
+.text-center {
+    text-align: center;
+}
+
+.text-primario {
+    color: var(--color-principal);
+}
+
+.text-blanco {
+    color: var(--blanco);
+}
+
+.text-negro {
+    color: var(--gris-oscuro);
+}
+
+.title {
+    margin: 5rem 0 0 0;
+    font-weight: 800;
+    line-height: 1.125;
+}
+
+.subtitle {
+    margin: 2.5rem 0 0 0;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.seccion {
+    padding: 5rem 0;
+}
+
+/** Header **/
+.header {
+    background-color: var(--color-secundario);
+    padding: 2rem 0;
+}
+
+.barra-navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .barra-navegacion {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/*.menu-principal .menu {
+    display: none;
+} */
+
+@media (min-width: 768px) {
+    .menu-principal {
+        display: block;
+    }
+
+    .menu-principal .menu {
+        display: flex;
+    }
+}
+
+.menu-principal a {
+    font-family: var(--fuente-principal);
+    display: block;
+    text-align: center;
+    color: var(--gris-oscuro);
+    font-size: 1.8rem;
+    padding: .5rem 2rem;
+}
+
+/** Footer **/
+.barra-redes-sociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .barra-redes-sociales {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .redes-sociales {
+        display: block;
+    }
+
+    .redes-sociales .menu {
+        display: flex;
+    }
+}
+
+.redes-sociales a {
+    font-family: var(--fuente-principal);
+    display: block;
+    text-align: center;
+    color: var(--gris-oscuro);
+    font-size: 1.8rem;
+    padding: .5rem 2rem;
+}
+
+/** Estilos Iconos Redes Sociales **/
+
+.footer {
+    background: var(--color-principal);
+}
+
+.footer-title {
+    margin: 5rem auto;
+}
+
+.footer-title p {
+    color: var(--color-secundario);
+    font-size: 2.6rem;
+    font-weight: 200;
+}
+
+p.contenerdor-texto-final {
+    width: min(27%, 120rem);
+    margin: 0 auto;
+}
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    justify-content: center;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: calc(0.5em - 1px);
+    text-align: center;
+}
+
+.icon-link .icon {
+    margin-right: 0;
+    font-size: 1.4em;
+    /* Aumentar el tamaño del icono */
+    color: var(--color-secundario);
+    /* Color blanco */
+}
+
+.footer-links a.icon-link {
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 100%;
+    margin: 0 .2rem;
+    height: 47px;
+    width: 47px;
+    border: var(--color-secundario) 2px solid;
+}
+
+.copyright {
+    padding: 5rem;
+}
+
+.copyright p {
+    color: var(--color-secundario);
+    font-weight: 100;
+    font-size: 1.8rem;
+}
+
+a,
+.button {
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    font-weight: 400;
+}
