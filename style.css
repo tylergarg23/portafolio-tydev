@@ -225,13 +225,14 @@ hr {
 }
 
 .footer-title {
-    margin: 5rem auto;
+    margin-bottom: 5rem;
 }
 
 .footer-title p {
     color: var(--color-secundario);
     font-size: 2.6rem;
     font-weight: 200;
+    line-height: 1.4;
 }
 
 p.contenerdor-texto-final {
@@ -261,13 +262,13 @@ p.contenerdor-texto-final {
 }
 
 .footer-links a.icon-link {
-    background-color: transparent;
+    /*background-color: transparent;*/
     color: #ffffff;
     border-radius: 100%;
-    margin: 0 .2rem;
+    margin: 0 1rem;
     height: 47px;
     width: 47px;
-    border: var(--color-secundario) 2px solid;
+    border: var(--color-secundario) 0.2rem solid;
 }
 
 .copyright {
@@ -276,13 +277,32 @@ p.contenerdor-texto-final {
 
 .copyright p {
     color: var(--color-secundario);
-    font-weight: 100;
-    font-size: 1.8rem;
+    font-weight: 300;
+    font-size: 1.9rem;
+    font-family: var(--fuente-headings);
 }
 
-a,
-.button {
-    transition: all .2s ease-in-out;
-    -webkit-transition: all .2s ease-in-out;
-    font-weight: 400;
+.button a:hover,
+.button a:hover path {
+    background: var(--color-secundario);
+    color: #5C3469;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+/* Logo Footer */
+
+.logo {
+    cursor: pointer;
+}
+
+.has-text-yellow {
+    display: grid;
+    justify-content: space-around;
+}
+
+.fa-4x {
+    width: 22rem;
+    height: auto;
+    margin: 4rem auto;
 }
