@@ -269,7 +269,17 @@ p.contenerdor-texto-final {
     height: 47px;
     width: 47px;
     border: var(--color-secundario) 0.2rem solid;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
+
+.button a:hover,
+.button a:hover path {
+    background: var(--color-secundario);
+    color: #5C3469;
+}
+
+/* Copyright */
 
 .copyright {
     padding: 5rem;
@@ -278,16 +288,8 @@ p.contenerdor-texto-final {
 .copyright p {
     color: var(--color-secundario);
     font-weight: 300;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     font-family: var(--fuente-headings);
-}
-
-.button a:hover,
-.button a:hover path {
-    background: var(--color-secundario);
-    color: #5C3469;
-    transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
 }
 
 /* Logo Footer */
@@ -302,7 +304,7 @@ p.contenerdor-texto-final {
 }
 
 .fa-4x {
-    width: 22rem;
+    width: 16rem;
     height: auto;
     margin: 4rem auto;
 }

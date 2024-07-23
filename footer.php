@@ -40,7 +40,6 @@
     <div class="copyright">
       <p>Copyright © <?php echo date('Y'); ?> - TyG.Dev </p>
     </div>
-
   </div>
 
 </footer>
