@@ -31,14 +31,14 @@ add_action('wp_enqueue_scripts', 'tylerdev_scripts_styles');
 function display_footer_icon_links() {
   ?>
   <div class="footer-links button">
-        <a href="mailto:youremail@example.com" class="icon-link">
+        <a href="mailto:tylergarg@gmail.com" class="icon-link">
           <i class="fas fa-envelope icon email"></i>
           
         </a>
-      <a href="https://www.instagram.com/yourprofile" class="icon-link">
+      <a href="https://www.instagram.com/tylergarcia.dev/" class="icon-link">
           <i class="fab fa-instagram icon"></i>
       </a>
-      <a href="https://www.linkedin.com/in/yourprofile" class="icon-link">
+      <a href="https://www.linkedin.com/in/tyler-garc%C3%ADa-rodr%C3%ADguez-51838bb9/" class="icon-link">
           <i class="fab fa-linkedin-in icon"></i>
       </a>
   </div>
