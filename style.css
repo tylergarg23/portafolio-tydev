@@ -308,3 +308,38 @@ p.contenerdor-texto-final {
     height: auto;
     margin: 4rem auto;
 }
+
+/** Pagina Principal **/
+
+.areas {
+    display: grid;
+    place-items: center;
+    /* Centra horizontal y verticalmente */
+    height: auto;
+    /* Usa toda la altura de la ventana */
+    width: auto;
+    /* Usa toda la anchura de la ventana */
+}
+
+.area {
+    display: grid;
+    gap: 50px;
+    /* Añade espacio entre las imágenes */
+    justify-items: center;
+    /* Centra el contenido horizontalmente */
+}
+
+.img-avatar,
+.img-herramientas {
+    height: auto;
+    /* Asegura que las imágenes mantengan su proporción */
+    display: block;
+    /* Asegura que cada imagen se trate como un bloque */
+}
+
+@media (max-width: 768px) {
+    .area {
+        height: auto;
+        /* Ajusta la altura automática para dispositivos más pequeños */
+    }
+}
