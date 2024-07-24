@@ -145,7 +145,7 @@ hr {
 
 /** Header **/
 .header {
-    background-color: var(--color-secundario);
+    background-color: transparent;
     padding: 2rem 0;
 }
 
@@ -153,6 +153,23 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.barra-navegacion .menu-item-14 a {
+    border-radius: 9999px;
+    /* Hace el enlace circular */
+    border: #5C3469 0.2rem solid;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.barra-navegacion .menu-item-14 a:hover {
+    background: #5C3469;
+    color: #ffffff;
+}
+
+.barra-navegacion .menu-item-15 a:hover {
+    color: #5C3469;
 }
 
 @media (min-width: 768px) {
@@ -182,6 +199,7 @@ hr {
     text-align: center;
     color: var(--gris-oscuro);
     font-size: 1.8rem;
+    font-weight: 500;
     padding: .5rem 2rem;
 }
 
