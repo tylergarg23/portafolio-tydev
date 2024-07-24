@@ -65,7 +65,7 @@ h2 {
 }
 
 h3 {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
 }
 
 h4 {
@@ -74,6 +74,7 @@ h4 {
 
 /** Globales **/
 p {
+    font-family: var(--fuente-headings);
     margin: 0;
 }
 
@@ -254,8 +255,10 @@ hr {
 }
 
 p.contenerdor-texto-final {
-    width: min(27%, 120rem);
+    width: min(19%, 120rem);
     margin: 0 auto;
+    font-weight: 300;
+    font-size: 1.8rem;
 }
 
 .icon-link {
@@ -307,7 +310,6 @@ p.contenerdor-texto-final {
     color: var(--color-secundario);
     font-weight: 300;
     font-size: 1.5rem;
-    font-family: var(--fuente-headings);
 }
 
 /* Logo Footer */
@@ -328,7 +330,6 @@ p.contenerdor-texto-final {
 }
 
 /** Pagina Principal **/
-
 .areas {
     display: grid;
     place-items: center;
@@ -360,4 +361,48 @@ p.contenerdor-texto-final {
         height: auto;
         /* Ajusta la altura automática para dispositivos más pequeños */
     }
+}
+
+/*Quien soy*/
+
+.sec-morado {
+    background: #5C3469;
+    width: auto;
+}
+
+.columns.info-personal {
+    display: grid;
+    /* Activa el grid layout para el contenedor */
+    justify-items: center;
+    /* Centra los elementos hijos horizontalmente */
+    max-width: 800px;
+    /* Establece un ancho máximo para el contenedor */
+    margin: 0 auto;
+    /* Centra el contenedor en el documento */
+    padding: 20px;
+    /* Añade espacio alrededor del contenido */
+    text-align: justify;
+    /* Justifica el texto del párrafo */
+    grid-template-columns: 1fr;
+    /* Define una columna que ocupa todo el ancho disponible */
+    gap: 10px;
+    /* Añade un espacio entre el título y el párrafo */
+}
+
+.columns.info-personal h3 {
+    color: var(--color-secundario);
+    margin-bottom: 2rem;
+    /* Espacio debajo del título */
+    text-align: center;
+    /* Centra el texto del título */
+}
+
+.columns.info-personal p {
+    color: var(--color-secundario);
+    margin: 0;
+    line-height: 1.6;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.8rem;
+    /* Mejora la legibilidad del párrafo */
 }

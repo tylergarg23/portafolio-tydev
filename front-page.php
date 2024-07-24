@@ -27,6 +27,25 @@
     </div>
   </section>
 
+  <section class="contenedor seccion sec-morado">
+    <div class="columns info-personal">
+      <?php 
+        $info_per = get_field('yo_soy');
+        $titulo_soy = $info_per['texto_soy'];
+        $parrafo_soy = $info_per['texto_info_personal'];
+
+      ?>
+
+      <h3>
+        <?php echo esc_html( $info_per['texto_soy']);?>
+      </h3>
+      <p>
+        <?php echo esc_html( $info_per['texto_info_personal']);?>
+      </p>
+
+    </div>
+  </section>
+
   <main class="contenedor seccion">
     
   </main>
