@@ -69,7 +69,7 @@ h3 {
 }
 
 h4 {
-    font-size: 2.1rem;
+    font-size: 2.5rem;
 }
 
 /** Globales **/
@@ -371,13 +371,11 @@ p.contenerdor-texto-final {
 }
 
 .columns.info-personal {
-    display: grid;
-    /* Activa el grid layout para el contenedor */
     justify-items: center;
     /* Centra los elementos hijos horizontalmente */
     max-width: 800px;
     /* Establece un ancho máximo para el contenedor */
-    margin: 0 auto;
+    margin: 20px auto 90px auto;
     /* Centra el contenedor en el documento */
     padding: 20px;
     /* Añade espacio alrededor del contenido */
@@ -405,4 +403,46 @@ p.contenerdor-texto-final {
     font-weight: 300;
     font-size: 1.8rem;
     /* Mejora la legibilidad del párrafo */
+}
+
+@media (min-width:768px) {
+    .columns {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        color: #141c3a;
+    }
+
+    .herramientas-dev {
+        box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 2px #E6ECF8;
+        border-radius: 10px;
+    }
+
+    .column {
+        padding: 10rem 0;
+        text-align: center;
+        font-family: var(--fuente-headings);
+        border-bottom: 0px solid #E6ECF8;
+        border-right: 1px solid #E6ECF8;
+    }
+
+    .column:last-child {
+        border-right: none;
+        border-bottom: none;
+    }
+
+    .column h4 {
+        margin: 2rem auto;
+        font-weight: 700;
+    }
+
+    .column .subtitulos-column {
+        color: #5C3469;
+        font-weight: 600;
+        margin-top: 5rem;
+    }
+
+    .icon-stack img {
+        display: inline;
+        max-width: 100%;
+    }
 }
