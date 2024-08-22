@@ -45,23 +45,28 @@
     </div>
   </section>
 
-  <main class="contenedor seccion sec-blanco">
+  <main class="contenedor seccion sec-blanco skills">
     <div class="columns herramientas-dev">
       <div class="column">
         <?php 
 
           $habilidad1 = get_field('habilidad_1');
-          $img_icon = $habilidad1['skill_icono']['sizes']['medium'];
+          $img_icon1 = $habilidad1['skill_icono']['sizes']['medium'];
+          $skill_texto1 = $habilidad1['skill_texto'];
+          $skill_descripcion1 = $habilidad1['skill_descripcion'];
+          $titulo_lenguajes1 = $habilidad1['titulo_lenguajes'];
+          $descripcion_lenguajes1 = $habilidad1['descripcion_lenguajes'];
+          $titulo_herramientas1 = $habilidad1['titulo_herramientas'];
+          $descripcion_herramientas1 = $habilidad1['descripcion_herramientas'];
+
 
           //echo "<pre>";
           //var_dump($habilidad1);
           //echo "</pre>"
-        
-      
         ?>
-        
+
         <span class="icon-stack icon-2x">
-          <img src="<?php echo  esc_attr($img_icon);?>" alt="Imagen <?php echo esc_attr($img_icon);?>" width="110px">
+          <img src="<?php echo  esc_attr($img_icon1);?>" alt="Imagen <?php echo esc_attr($img_icon1);?>" width="110px">
           <!--<svg width="91" height="73" viewBox="0 0 91 73" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M45.66 72.28C55.2078 72.28 64.3645 68.4872 71.1158 61.7359C77.8672 54.9846 81.66 45.8278 81.66 36.28C81.66 26.7322 77.8672 17.5755 71.1158 10.8242C64.3645 4.07288 55.2078 0.280029 45.66 0.280029C36.1122 0.280029 26.9555 4.07288 20.2042 10.8242C13.4529 17.5755 9.66 26.7322 9.66 36.28C9.66 45.8278 13.4529 54.9846 20.2042 61.7359C26.9555 68.4872 36.1122 72.28 45.66 72.28Z" fill="#5C3469"/>
             <g clip-path="url(#clip0_1_10)">
@@ -76,47 +81,60 @@
           </svg>-->
         </span>
         
-        <h4>QA Automation</h4>
-        <p>Otra de mis pasiones es la automatización de pruebas.</p>
-        <p class="subtitulos-column">Lenguajes que uso:</p>
-        <p>C#, JS, Java, SQL</p>
-        <p class="subtitulos-column">Herramientas de Pruebas.</p>
-        <ul>
-          <li>Selenium</li>
-          <li>.Net</li>
-          <li>Cucumber</li>
-        </ul>
+        <h4><?php echo esc_attr($skill_texto1) ?></h4>
+        <p><?php echo esc_attr($skill_descripcion1) ?></p>
+        <p class="subtitulos-column"><?php echo esc_attr($titulo_lenguajes1) ?></p>
+        <p><?php echo esc_attr($descripcion_lenguajes1) ?></p>
+        <p class="subtitulos-column"><?php echo esc_attr($titulo_herramientas1) ?></p>
+        <p><?php echo esc_attr($descripcion_herramientas1) ?></p>
       </div>
 
       <div class="column">
+        <?php 
+
+          $habilidad2 = get_field('habilidad_2');
+          $img_icon2 = $habilidad2['skill_icono']['sizes']['medium'];
+          $skill_texto2 = $habilidad2['skill_texto'];
+          $skill_descripcion2 = $habilidad2['skill_descripcion'];
+          $titulo_lenguajes2 = $habilidad2['titulo_lenguajes'];
+          $descripcion_lenguajes2 = $habilidad2['descripcion_lenguajes'];
+          $titulo_herramientas2 = $habilidad2['titulo_herramientas'];
+          $descripcion_herramientas2 = $habilidad2['descripcion_herramientas'];
+        ?>
+
         <span class="icon-stack icon-2x">
-          <img src="<?php echo  esc_attr($img_icon);?>" alt="Imagen <?php echo esc_attr($img_icon);?>" width="110px">
+          <img src="<?php echo  esc_attr($img_icon2);?>" alt="Imagen <?php echo esc_attr($img_icon2);?>" width="110px">
         </span>
-        <h4>QA Automation</h4>
-        <p>Otra de mis pasiones es la automatización de pruebas.</p>
-        <p class="subtitulos-column">Lenguajes que uso:</p>
-        <p>C#, JS, Java, SQL</p>
-        <p class="subtitulos-column">Herramientas de Pruebas.</p>
-        <ul>
-          <li>Selenium</li>
-          <li>.Net</li>
-          <li>Cucumber</li>
-        </ul>
+        <h4><?php echo esc_attr($skill_texto2) ?></h4>
+        <p><?php echo esc_attr($skill_descripcion2) ?></p>
+        <p class="subtitulos-column"><?php echo esc_attr($titulo_lenguajes2) ?></p>
+        <p><?php echo esc_attr($descripcion_lenguajes2) ?></p>
+        <p class="subtitulos-column"><?php echo esc_attr($titulo_herramientas2) ?></p>
+        <p><?php echo esc_attr($descripcion_herramientas2) ?></p>
       </div>
       <div class="column">
+
+      <?php 
+
+        $habilidad3 = get_field('habilidad_3');
+        $img_icon3 = $habilidad3['skill_icono']['sizes']['medium'];
+        $skill_texto3 = $habilidad3['skill_texto'];
+        $skill_descripcion3 = $habilidad3['skill_descripcion'];
+        $titulo_lenguajes3 = $habilidad3['titulo_lenguajes'];
+        $descripcion_lenguajes3 = $habilidad3['descripcion_lenguajes'];
+        $titulo_herramientas3 = $habilidad3['titulo_herramientas'];
+
+      ?>
+
         <span class="icon-stack icon-2x">
-          <img src="<?php echo  esc_attr($img_icon);?>" alt="Imagen <?php echo esc_attr($img_icon);?>" width="110px">
+          <img src="<?php echo  esc_attr($img_icon3);?>" alt="Imagen <?php echo esc_attr($img_icon3);?>" width="110px">
         </span>
-        <h4>QA Automation</h4>
-        <p>Otra de mis pasiones es la automatización de pruebas.</p>
-        <p class="subtitulos-column">Lenguajes que uso:</p>
-        <p>C#, JS, Java, SQL</p>
-        <p class="subtitulos-column">Herramientas de Pruebas.</p>
-        <ul>
-          <li>Selenium</li>
-          <li>.Net</li>
-          <li>Cucumber</li>
-        </ul>
+        <h4><?php echo esc_attr($skill_texto3) ?></h4>
+        <p><?php echo esc_attr($skill_descripcion3) ?></p>
+        <p class="subtitulos-column"><?php echo esc_attr($titulo_lenguajes3) ?></p>
+        <p><?php echo esc_attr($descripcion_lenguajes3) ?></p>
+        <p class="subtitulos-column"><?php echo esc_attr($titulo_herramientas3) ?></p>
+        
       </div>
     </div>
   </main>

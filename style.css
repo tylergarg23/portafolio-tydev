@@ -410,15 +410,17 @@ p.contenerdor-texto-final {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         color: #141c3a;
+        margin-top: -14rem;
     }
 
     .herramientas-dev {
         box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 2px #E6ECF8;
         border-radius: 10px;
+        background: #fff;
     }
 
     .column {
-        padding: 10rem 0;
+        padding: 10rem 4rem;
         text-align: center;
         font-family: var(--fuente-headings);
         border-bottom: 0px solid #E6ECF8;
