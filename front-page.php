@@ -125,7 +125,6 @@
         $titulo_herramientas3 = $habilidad3['titulo_herramientas'];
 
       ?>
-
         <span class="icon-stack icon-2x">
           <img src="<?php echo  esc_attr($img_icon3);?>" alt="Imagen <?php echo esc_attr($img_icon3);?>" width="110px">
         </span>
@@ -138,6 +137,97 @@
       </div>
     </div>
   </main>
+
+  <section class="contenedor seccion sec-blanco">
+    <div class="content my-work">
+
+      <?php
+
+          $trabajos_texto = get_field('trabajos_texto');
+          $titulo_trabajo = $trabajos_texto['titulo_trabajo'];
+          $descripcion_trabajo = $trabajos_texto['descripcion_trabajo'];
+          $texto_correo = $trabajos_texto['texto_correo'];
+
+
+          /*echo "<pre>";
+          var_dump($trabajos_texto);
+          echo "</pre>";*/
+      ?>
+
+      <h3 class="text-negro"><?php echo esc_attr($titulo_trabajo) ?></h3>
+      <p class="text-my-work"><?php echo esc_attr($descripcion_trabajo) ?> 
+        <a class="has-text-weight-normal" href="mailto:tylergarg@gmail.com" _istranslated="1"><?php echo esc_attr($texto_correo) ?></a>
+      </p>
+      <div class="project-grid">
+        <div class="columns_3">
+          <div class="column_3">
+            <figure class="image is-3by2">
+              <img class="project-thumb" src="wp-content\themes\tylerdev\img\grafica_real_2.png" alt="img_1">
+              <figcaption>
+                <h3 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                <a class="button is-outlined is-rounded" href="#" target="_blank">Visitar el sitio web
+                  <span class="icon_enlace">
+                    <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                      <path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                    </svg><!-- <i class="fas fa-angle-right"></i> -->
+                  </span>
+                </a>
+              </figcaption>
+              <div class="overlay"></div>
+            </figure>
+          </div>
+          <div class="column_3">
+          <figure class="image is-3by2">
+              <img class="project-thumb" src="wp-content\themes\tylerdev\img\amor_en_accion_2.png" alt="img_2">
+              <figcaption>
+                <h3 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                <a class="button is-outlined is-rounded" href="#" target="_blank">Visitar el sitio web
+                  <span class="icon_enlace">
+                    <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                      <path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                    </svg><!-- <i class="fas fa-angle-right"></i> -->
+                  </span>
+                </a>
+              </figcaption>
+              <div class="overlay"></div>
+            </figure>
+          </div>
+          <div class="column_3">
+          <figure class="image is-3by2">
+              <img class="project-thumb" src="wp-content\themes\tylerdev\img\elepic_2.png" alt="">
+              <figcaption>
+                <h3 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                <a class="button is-outlined is-rounded" href="#" target="_blank">Visitar el sitio web
+                  <span class="icon_enlace">
+                    <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                      <path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                    </svg><!-- <i class="fas fa-angle-right"></i> -->
+                  </span>
+                </a>
+              </figcaption>
+              <div class="overlay"></div>
+            </figure>
+          </div>
+          <div class="column_3">
+          <figure class="image is-3by2">
+              <img class="project-thumb" src="wp-content\themes\tylerdev\img\estacion_dg_2.png" alt="">
+              <figcaption>
+                <h3 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                <a class="button is-outlined is-rounded" href="#" target="_blank">Visitar el sitio web
+                  <span class="icon_enlace">
+                    <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                       <path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
+                     </svg><!-- <i class="fas fa-angle-right"></i> -->
+                  </span>
+                </a>
+              </figcaption>
+              <div class="overlay"></div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <?php 
     get_footer();

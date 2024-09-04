@@ -79,6 +79,8 @@ p {
 }
 
 a {
+    color: #1a8cff;
+    cursor: pointer;
     text-decoration: none;
 }
 
@@ -319,8 +321,9 @@ p.contenerdor-texto-final {
 }
 
 .has-text-yellow {
-    display: grid;
+    /*display: grid;
     justify-content: space-around;
+    */
 }
 
 .fa-4x {
@@ -447,4 +450,144 @@ p.contenerdor-texto-final {
         display: inline;
         max-width: 100%;
     }
+}
+
+.content.my-work {
+    text-align: center;
+    font-weight: 500;
+}
+
+.text-my-work {
+    margin-top: 2rem;
+}
+
+.has-text-weight-normal:hover {
+    color: #0066cd;
+}
+
+@media (min-width:768px) {
+    .project-grid {
+        padding: 4rem 0 4rem;
+        ;
+    }
+
+    .columns_3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+.project-grid figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.project-grid figure:hover .overlay,
+.project-grid figure:hover figcaption {
+    opacity: 1;
+}
+
+.project-grid figure figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 3rem;
+    color: #ffffff;
+    z-index: 1;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.project-grid figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.project-grid figure img.project-thumb {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: .25s ease-in-out;
+}
+
+.project-grid figure:hover img {
+    /* -webkit-transform: scale(1.1); */
+    transform: scale(1.1);
+}
+
+.project-grid figure figcaption .title {
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.project-grid figure:hover .overlay {
+    opacity: 1;
+}
+
+.project-grid .overlay {
+    background-color: #141c3a;
+}
+
+.project-grid .overlay,
+.project-grid figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .45s ease-in-out;
+}
+
+.project-grid figure figcaption a.button.is-outlined.is-rounded {
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 1.2rem;
+    font-weight: 400;
+    border-width: 2px;
+    color: #ffffff;
+}
+
+.button.is-outlined {
+    background-color: transparent;
+    border: var(--color-secundario) 0.2rem solid;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.button.is-outlined:hover {
+    background: var(--color-secundario);
+}
+
+.button.is-rounded {
+    border-radius: 9999px;
+}
+
+.button .icon_enlace:last-child:not(:first-child) {
+    margin-left: 0.25em;
+    margin-right: calc(-0.5em - 1px);
+}
+
+.icon_enlace {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+span.icon_enlace {
+    vertical-align: middle;
+    margin-left: 0px;
+}
+
+span.icon_enlace svg {
+    width: 8px;
 }
