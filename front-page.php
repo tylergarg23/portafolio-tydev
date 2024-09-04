@@ -149,9 +149,30 @@
           $texto_correo = $trabajos_texto['texto_correo'];
 
 
+          $trabajos_imagenes_1 = get_field('trabajos_imagenes_1');
+          $imagen_principal = $trabajos_imagenes_1['imagen_principal']['sizes']['large'];
+          $titulo_imagen_trabajo = $trabajos_imagenes_1['titulo_imagen_trabajo'];
+          $texto_boton_trabajo = $trabajos_imagenes_1['texto_boton_trabajo'];
+
+          $trabajos_imagenes_2 = get_field('trabajos_imagenes_2');
+          $imagen_principal_2 = $trabajos_imagenes_2['imagen_principal']['sizes']['large'];
+          $titulo_imagen_trabajo_2 = $trabajos_imagenes_2['titulo_imagen_trabajo'];
+          $texto_boton_trabajo_2 = $trabajos_imagenes_2['texto_boton_trabajo'];
+
+          $trabajos_imagenes_3 = get_field('trabajos_imagenes_3');
+          $imagen_principal_3 = $trabajos_imagenes_3['imagen_principal']['sizes']['large'];
+          $titulo_imagen_trabajo_3 = $trabajos_imagenes_3['titulo_imagen_trabajo'];
+          $texto_boton_trabajo_3 = $trabajos_imagenes_3['texto_boton_trabajo'];
+
+          $trabajos_imagenes_4 = get_field('trabajos_imagenes_4');
+          $imagen_principal_4 = $trabajos_imagenes_4['imagen_principal']['sizes']['large'];
+          $titulo_imagen_trabajo_4 = $trabajos_imagenes_4['titulo_imagen_trabajo'];
+          $texto_boton_trabajo_4 = $trabajos_imagenes_4['texto_boton_trabajo'];
+
           /*echo "<pre>";
-          var_dump($trabajos_texto);
-          echo "</pre>";*/
+          var_dump($trabajos_imagenes_2);
+          echo "</pre>";
+          */
       ?>
 
       <h3 class="text-negro"><?php echo esc_attr($titulo_trabajo) ?></h3>
@@ -162,10 +183,10 @@
         <div class="columns_3">
           <div class="column_3">
             <figure class="image is-3by2">
-              <img class="project-thumb" src="wp-content\themes\tylerdev\img\grafica_real_2.png" alt="img_1">
+              <img class="project-thumb" src="<?php echo  esc_attr($imagen_principal);?>" alt="img_1">
               <figcaption>
-                <h3 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                <a class="button is-outlined is-rounded" href="#" target="_blank">Visitar el sitio web
+                <h3 class="title"><?php echo esc_attr($titulo_imagen_trabajo); ?></h1>
+                <a class="button is-outlined is-rounded" href="https://graficareal.pe/" target="_blank"><?php echo esc_attr($texto_boton_trabajo); ?>
                   <span class="icon_enlace">
                     <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
                       <path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
@@ -178,10 +199,10 @@
           </div>
           <div class="column_3">
           <figure class="image is-3by2">
-              <img class="project-thumb" src="wp-content\themes\tylerdev\img\amor_en_accion_2.png" alt="img_2">
+              <img class="project-thumb" src="<?php echo  esc_attr($imagen_principal_2);?>" alt="img_2">
               <figcaption>
-                <h3 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                <a class="button is-outlined is-rounded" href="#" target="_blank">Visitar el sitio web
+                <h3 class="title"><?php echo esc_attr($titulo_imagen_trabajo_2); ?></h1>
+                <a class="button is-outlined is-rounded" href="https://amorenaccion.org.pe/" target="_blank"><?php echo esc_attr($texto_boton_trabajo_2); ?>
                   <span class="icon_enlace">
                     <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
                       <path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
@@ -194,10 +215,10 @@
           </div>
           <div class="column_3">
           <figure class="image is-3by2">
-              <img class="project-thumb" src="wp-content\themes\tylerdev\img\elepic_2.png" alt="">
+              <img class="project-thumb" src="<?php echo  esc_attr($imagen_principal_3);?>" alt="">
               <figcaption>
-                <h3 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                <a class="button is-outlined is-rounded" href="#" target="_blank">Visitar el sitio web
+                <h3 class="title"><?php echo esc_attr($titulo_imagen_trabajo_3); ?></h1>
+                <a class="button is-outlined is-rounded" href="https://elepicperu.com/" target="_blank"><?php echo esc_attr($texto_boton_trabajo_3); ?>
                   <span class="icon_enlace">
                     <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
                       <path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
@@ -210,10 +231,10 @@
           </div>
           <div class="column_3">
           <figure class="image is-3by2">
-              <img class="project-thumb" src="wp-content\themes\tylerdev\img\estacion_dg_2.png" alt="">
+              <img class="project-thumb" src="<?php echo  esc_attr($imagen_principal_4);?>" alt="">
               <figcaption>
-                <h3 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                <a class="button is-outlined is-rounded" href="#" target="_blank">Visitar el sitio web
+                <h3 class="title"><?php echo esc_attr($titulo_imagen_trabajo_4); ?></h1>
+                <a class="button is-outlined is-rounded" href="https://estaciondg.com/" target="_blank"><?php echo esc_attr($texto_boton_trabajo_4); ?>
                   <span class="icon_enlace">
                     <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
                        <path fill="currentColor" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path>
