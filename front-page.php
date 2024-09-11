@@ -250,6 +250,49 @@
     </div>
   </section>
 
+  <hr>
+  <section class="contenedor seccion sec-blanco">
+    <div class="content testimoniales">
+        <h3 class="title text-negro">Testimoniales</h3>
+        <h4 class="subtitle-testimonials">La gente con la que he trabajado me ha dicho cosas bonitas...</h4>
+        <div class="columns_1 is-centered">
+            <div class="column_1 is-two-thirds">
+                <div class="testimonials-slider">
+                    <input id="carousel-1" type="radio" name="carousel" checked>
+                    <input id="carousel-2" type="radio" name="carousel">
+                    <div class="carousel-slides">
+                        <div class="carousel-inner">
+                            <div class="carousel-item" id="item-1">
+                                <div class="testimonial-block">
+                                    <img class="avatar" src="wp-content/themes/tylerdev/img/pascal.png">
+                                    <p class="quote">"Fue un verdadero placer trabajar con Matt y esperamos volver a trabajar con él. Definitivamente es el tipo de diseñador en el que puedes confiar un proyecto de principio a fin".</p>
+                                    <h1 class="title is-size-5">Pascal Tremblay</h1>
+                                    <h2 class="subtitle is-size-6">Líder creativo, buen tipo</h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="item-2">
+                                <div class="testimonial-block">
+                                    <img class="avatar" src="wp-content/themes/tylerdev/img/alvin.png">
+                                    <p class="quote">"Matt es un comunicador claro con la tenacidad y la confianza para profundizar en escenarios de diseño complicados y la fricción colaborativa que se necesita para producir un trabajo excelente".</p>
+                                    <h1 class="title is-size-5">Alvin Engler</h1>
+                                    <h2 class="subtitle is-size-6">Director ejecutivo de West Third Enterprises, Inc.</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <label for="carousel-1"></label>
+                        <label for="carousel-2"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
   <?php 
     get_footer();
   ?>
