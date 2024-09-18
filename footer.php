@@ -1,5 +1,5 @@
   <footer class="footer">
-    <hr>
+    
 
     <div class="contenedor contenido-footer text-center">
       <a href="#" class="logo has-text-yellow">
