@@ -1,4 +1,8 @@
 <?php 
+
+  /*
+  * Template Name: Pagina Principal (Index)
+  */
   get_header();
 ?>
 
@@ -22,7 +26,7 @@
         echo "</pre>"
         */
       ?>
-      <img class="img-avatar"src="<?php echo  esc_attr($img_avatar);?>" alt="Imagen <?php echo esc_attr($img_avatar);?>">
+      <img class="img-avatar" src="<?php echo  esc_attr($img_avatar);?>" alt="Imagen <?php echo esc_attr($img_avatar);?>">
       <img class="img-herramientas" src="<?php echo esc_attr($img_herramientas);?>" alt="Imagen <?php echo esc_attr($imagen_herramientas);?>">
     </div>
   </section>
@@ -185,7 +189,7 @@
             <figure class="image is-3by2">
               <img class="project-thumb" src="<?php echo  esc_attr($imagen_principal);?>" alt="img_1">
               <figcaption>
-                <h3 class="title"><?php echo esc_attr($titulo_imagen_trabajo); ?></h1>
+                <h3 class="title is-size-5"><?php echo esc_attr($titulo_imagen_trabajo); ?></h1>
                 <a class="button is-outlined is-rounded" href="https://graficareal.pe/" target="_blank"><?php echo esc_attr($texto_boton_trabajo); ?>
                   <span class="icon_enlace">
                     <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
@@ -201,7 +205,7 @@
           <figure class="image is-3by2">
               <img class="project-thumb" src="<?php echo  esc_attr($imagen_principal_2);?>" alt="img_2">
               <figcaption>
-                <h3 class="title"><?php echo esc_attr($titulo_imagen_trabajo_2); ?></h1>
+                <h3 class="title is-size-5"><?php echo esc_attr($titulo_imagen_trabajo_2); ?></h1>
                 <a class="button is-outlined is-rounded" href="https://amorenaccion.org.pe/" target="_blank"><?php echo esc_attr($texto_boton_trabajo_2); ?>
                   <span class="icon_enlace">
                     <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
@@ -217,7 +221,7 @@
           <figure class="image is-3by2">
               <img class="project-thumb" src="<?php echo  esc_attr($imagen_principal_3);?>" alt="">
               <figcaption>
-                <h3 class="title"><?php echo esc_attr($titulo_imagen_trabajo_3); ?></h1>
+                <h3 class="title is-size-5"><?php echo esc_attr($titulo_imagen_trabajo_3); ?></h1>
                 <a class="button is-outlined is-rounded" href="https://elepicperu.com/" target="_blank"><?php echo esc_attr($texto_boton_trabajo_3); ?>
                   <span class="icon_enlace">
                     <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
@@ -233,7 +237,7 @@
           <figure class="image is-3by2">
               <img class="project-thumb" src="<?php echo  esc_attr($imagen_principal_4);?>" alt="">
               <figcaption>
-                <h3 class="title"><?php echo esc_attr($titulo_imagen_trabajo_4); ?></h1>
+                <h3 class="title is-size-5"><?php echo esc_attr($titulo_imagen_trabajo_4); ?></h1>
                 <a class="button is-outlined is-rounded" href="https://estaciondg.com/" target="_blank"><?php echo esc_attr($texto_boton_trabajo_4); ?>
                   <span class="icon_enlace">
                     <svg class="svg-inline--fa fa-angle-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
