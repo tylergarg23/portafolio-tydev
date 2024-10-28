@@ -264,6 +264,17 @@ p.contenerdor-texto-final {
     font-size: 1.8rem;
 }
 
+
+@media (max-width: 768px) {
+    p.contenerdor-texto-final {
+        width: min(54%, 79rem);
+        margin: 0 auto;
+        font-weight: 300;
+        font-size: 1.8rem;
+    }
+}
+
+
 .icon-link {
     display: inline-flex;
     align-items: center;
@@ -414,6 +425,11 @@ print {
     .section.skills .box .content .columns .column.is-size-4-mobile {
         padding: 50px 30px;
         border-bottom: 1px solid #E6ECF8;
+    }
+
+    .section.skills .box .content .columns .column.is-size-4-mobile:last-child {
+        padding: 50px 30px;
+        /*border-bottom: 1px solid #E6ECF8;*/
     }
 }
 
@@ -663,11 +679,17 @@ span.icon_enlace svg {
     width: 8px;
 }
 
-
-
-/*Ejemplo*/
-
 /* Testimoniales */
+
+.testimoniales .title {
+    font-size: 2.5rem;
+    margin-bottom: 1.8rem;
+}
+
+.testimoniales .subtitle-testimonials {
+    font-size: 1.9rem;
+    font-weight: 500;
+}
 
 @media (min-width:768px) {
     .testimoniales {
@@ -793,7 +815,7 @@ input[name="carousel"] {
 }
 
 .testimonial-block p.quote {
-    font-size: 20px;
+    font-size: 18px;
     font-family: "eurostile", sans-serif;
     max-width: 700px;
     margin: 0 auto 2.5rem;
@@ -1461,6 +1483,30 @@ print {
         border-right: 1px solid #E6ECF8;
         padding: 60px 35px;
     }
+
+    .section.mentor-style .mentor-style-grid .box .content .dos_columns .dos_column:last-child {
+        border-bottom: none;
+    }
+
+    .section.mentor-style .mentor-style-grid .box .content .dos_columns .dos_column:nth-child(3) {
+        border-bottom: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .section.mentor-style .mentor-style-grid .box .content .dos_columns .dos_column:nth-child(odd) {
+        border-right: none;
+    }
+
+    .section.mentor-style .mentor-style-grid .box .content .dos_columns .dos_column:nth-child(even) {
+        border-right: none;
+    }
+
+    .section.mentor-style .mentor-style-grid .box .content .dos_columns .dos_column:last-child {
+        border-bottom: none;
+    }
+
 }
 
 .section.mentor-style .mentor-style-grid .box .content .dos_columns .dos_column {

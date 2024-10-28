@@ -71,7 +71,7 @@
                   <li>Sketch</li>
                 </ul>
               </div>
-              <div class="column"><span class="fa-stack fa-2x"><svg class="svg-inline--fa fa-circle fa-stack-2x has-text-success" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path></svg><!-- <i class="fa-solid fa-circle fa-stack-2x has-text-success"></i> --><svg class="svg-inline--fa fa-square-terminal fa-stack-1x has-text-dark" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="square-terminal" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M384 64c17.7 0 32 14.3 32 32l0 320c0 17.7-14.3 32-32 32L64 448c-17.7 0-32-14.3-32-32L32 96c0-17.7 14.3-32 32-32l320 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM83.9 149.6c-5.8 6.7-5 16.8 1.7 22.6L183.4 256 85.6 339.9c-6.7 5.8-7.5 15.8-1.7 22.6s15.9 7.5 22.6 1.7l112-96c3.5-3 5.6-7.5 5.6-12.1s-2-9.1-5.6-12.1l-112-96c-6.7-5.8-16.8-5-22.6 1.7zM208 352c-8.8 0-16 7.2-16 16s7.2 16 16 16l160 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-160 0z"></path></svg><!-- <i class="fa-light fa-square-terminal fa-stack-1x has-text-dark"></i> --></span>
+              <div class="column is-size-4-mobile"><span class="fa-stack fa-2x"><svg class="svg-inline--fa fa-circle fa-stack-2x has-text-success" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path></svg><!-- <i class="fa-solid fa-circle fa-stack-2x has-text-success"></i> --><svg class="svg-inline--fa fa-square-terminal fa-stack-1x has-text-dark" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="square-terminal" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M384 64c17.7 0 32 14.3 32 32l0 320c0 17.7-14.3 32-32 32L64 448c-17.7 0-32-14.3-32-32L32 96c0-17.7 14.3-32 32-32l320 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM83.9 149.6c-5.8 6.7-5 16.8 1.7 22.6L183.4 256 85.6 339.9c-6.7 5.8-7.5 15.8-1.7 22.6s15.9 7.5 22.6 1.7l112-96c3.5-3 5.6-7.5 5.6-12.1s-2-9.1-5.6-12.1l-112-96c-6.7-5.8-16.8-5-22.6 1.7zM208 352c-8.8 0-16 7.2-16 16s7.2 16 16 16l160 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-160 0z"></path></svg><!-- <i class="fa-light fa-square-terminal fa-stack-1x has-text-dark"></i> --></span>
                 <h1 class="title is-size-4 is-spaced">Frontend Developer</h1>
                 <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
                 <p class="list-title has-text-primary has-text-weight-normal">Languages I speak:</p>
@@ -89,7 +89,7 @@
                   <li>VS Code</li>
                 </ul>
               </div>
-              <div class="column"><span class="fa-stack fa-2x"><svg class="svg-inline--fa fa-circle fa-stack-2x has-text-success" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path></svg><!-- <i class="fa-solid fa-circle fa-stack-2x has-text-success"></i> --><svg class="svg-inline--fa fa-book fa-stack-1x has-text-dark" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="book" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M64 0C28.7 0 0 28.7 0 64L0 448s0 0 0 0c0 35.3 28.7 64 64 64l368 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-16 0 0-66.7c18.6-6.6 32-24.4 32-45.3l0-320c0-26.5-21.5-48-48-48L64 0zM384 416l0 64L64 480c-17.7 0-32-14.3-32-32s14.3-32 32-32l320 0zM64 384c-11.7 0-22.6 3.1-32 8.6L32 64c0-17.7 14.3-32 32-32l32 0 0 352-32 0zm64 0l0-352 272 0c8.8 0 16 7.2 16 16l0 320c0 8.8-7.2 16-16 16l-272 0zm48-240c0 8.8 7.2 16 16 16l160 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-160 0c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16l160 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-160 0c-8.8 0-16 7.2-16 16z"></path></svg><!-- <i class="fa-light fa-book fa-stack-1x has-text-dark"></i> --></span>
+              <div class="column is-size-4-mobile"><span class="fa-stack fa-2x"><svg class="svg-inline--fa fa-circle fa-stack-2x has-text-success" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path></svg><!-- <i class="fa-solid fa-circle fa-stack-2x has-text-success"></i> --><svg class="svg-inline--fa fa-book fa-stack-1x has-text-dark" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="book" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M64 0C28.7 0 0 28.7 0 64L0 448s0 0 0 0c0 35.3 28.7 64 64 64l368 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-16 0 0-66.7c18.6-6.6 32-24.4 32-45.3l0-320c0-26.5-21.5-48-48-48L64 0zM384 416l0 64L64 480c-17.7 0-32-14.3-32-32s14.3-32 32-32l320 0zM64 384c-11.7 0-22.6 3.1-32 8.6L32 64c0-17.7 14.3-32 32-32l32 0 0 352-32 0zm64 0l0-352 272 0c8.8 0 16 7.2 16 16l0 320c0 8.8-7.2 16-16 16l-272 0zm48-240c0 8.8 7.2 16 16 16l160 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-160 0c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16l160 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-160 0c-8.8 0-16 7.2-16 16z"></path></svg><!-- <i class="fa-light fa-book fa-stack-1x has-text-dark"></i> --></span>
                 <h1 class="title is-size-4 is-spaced">Mentor</h1>
                 <p>I genuinely care about people, and enjoy helping them work on their craft.</p>
                 <p class="list-title has-text-primary has-text-weight-normal">Experiences I draw from:</p>
@@ -224,7 +224,7 @@
   </section>
 
   <hr>
-  <section class="contenedor seccion sec-blanco pd-bot-10rem">
+  <section class="contenedor seccion sec-blanco pd-bot-10rem has-text-centered">
     <div class="content testimoniales">
         <h3 class="title text-negro">Testimoniales</h3>
         <h4 class="subtitle-testimonials">La gente con la que he trabajado me ha dicho cosas bonitas...</h4>
@@ -238,7 +238,7 @@
                             <div class="carousel-item" id="item-1">
                                 <div class="testimonial-block">
                                     <img class="avatar" src="wp-content/themes/tylerdev/img/pascal.png">
-                                    <p class="quote">"Fue un verdadero placer trabajar con Matt y esperamos volver a trabajar con él. Definitivamente es el tipo de diseñador en el que puedes confiar un proyecto de principio a fin".</p>
+                                    <p class="quote">"Fue un verdadero placer trabajar con Tyler y esperamos volver a trabajar con él. Definitivamente es el tipo de diseñador en el que puedes confiar un proyecto de principio a fin".</p>
                                     <h1 class="title is-size-5">Pascal Tremblay</h1>
                                     <h2 class="subtitle is-size-6">Líder creativo, buen tipo</h2>
                                 </div>
@@ -246,7 +246,7 @@
                             <div class="carousel-item" id="item-2">
                                 <div class="testimonial-block">
                                     <img class="avatar" src="wp-content/themes/tylerdev/img/alvin.png">
-                                    <p class="quote">"Matt es un comunicador claro con la tenacidad y la confianza para profundizar en escenarios de diseño complicados y la fricción colaborativa que se necesita para producir un trabajo excelente".</p>
+                                    <p class="quote">"Tyler es un profesional excelente y de confianza, para profundizar en escenarios de diseño complicados y la fricción colaborativa que se necesita para producir un trabajo de calidad".</p>
                                     <h1 class="title is-size-5">Alvin Engler</h1>
                                     <h2 class="subtitle is-size-6">Director ejecutivo de West Third Enterprises, Inc.</h2>
                                 </div>
