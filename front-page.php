@@ -58,51 +58,76 @@
         <div class="box">
           <div class="content">
             <div class="columns is-centered">
-              <div class="column is-size-4-mobile"><span class="fa-stack fa-2x"><svg class="svg-inline--fa fa-circle fa-stack-2x has-text-success" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path></svg><!-- <i class="fa-solid fa-circle fa-stack-2x has-text-success"></i> --><svg class="svg-inline--fa fa-layer-plus fa-stack-1x has-text-dark" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="layer-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M480 24c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 40-40 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l40 0 0 40c0 8.8 7.2 16 16 16s16-7.2 16-16l0-40 40 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-40 0 0-40zM288 128c-7.5 0-15 1.6-21.8 4.7L48.8 230.1C38.6 234.7 32 244.8 32 256s6.6 21.3 16.8 25.9l217.4 97.5c6.9 3.1 14.3 4.7 21.8 4.7s15-1.6 21.8-4.7l217.4-97.5c10.2-4.6 16.8-14.7 16.8-25.9s-6.6-21.3-16.8-25.9L309.8 132.7c-6.9-3.1-14.3-4.7-21.8-4.7zm-8.8 33.9c2.8-1.2 5.7-1.9 8.8-1.9s6 .6 8.8 1.9l210 94.1-210 94.1c-2.8 1.2-5.7 1.9-8.8 1.9s-6-.6-8.8-1.9L69.3 256l210-94.1zM94.7 337.5L48.8 358.1C38.6 362.7 32 372.8 32 384s6.6 21.3 16.8 25.9l217.4 97.5c6.9 3.1 14.3 4.7 21.8 4.7s15-1.6 21.8-4.7l217.4-97.5c10.2-4.6 16.8-14.7 16.8-25.9s-6.6-21.3-16.8-25.9l-45.9-20.6-39.1 17.5L506.7 384l-210 94.1c-2.8 1.2-5.7 1.9-8.8 1.9s-6-.6-8.8-1.9L69.3 384l64.5-28.9L94.7 337.5z"></path></svg><!-- <i class="fa-light fa-layer-plus fa-stack-1x has-text-dark"></i> --></span>
-                <h1 class="title is-size-4 is-spaced">Designer</h1>
-                <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
-                <p class="list-title has-text-primary has-text-weight-normal">Things I enjoy designing:</p>
-                <p>UX, UI, Web, Apps, Logos</p>
-                <p class="list-title has-text-primary has-text-weight-normal">Design Tools:</p>
+              <div class="column is-size-4-mobile">
+              <?php
+                  $habilidad1 = get_field('habilidad_1');
+                  $skill_icono1 = $habilidad1['skill_icono']['sizes']['medium'];
+                  $skill_texto1 = $habilidad1['skill_texto'];
+                  $skill_descripcion1 = $habilidad1['skill_descripcion'];
+                  $titulo_lenguajes1 = $habilidad1['titulo_lenguajes'];
+                  $descripcion_lenguajes1 = $habilidad1['descripcion_lenguajes'];
+                  $titulo_herramientas1 = $habilidad1['titulo_herramientas'];
+                  $descripcion_herramientas1 = $habilidad1['descripcion_herramientas'];
+
+                  $habilidad2 = get_field('habilidad_2');
+                  $skill_icono2 = $habilidad2['skill_icono']['sizes']['medium'];
+                  $skill_texto2 = $habilidad2['skill_texto'];
+                  $skill_descripcion2 = $habilidad2['skill_descripcion'];
+                  $titulo_lenguajes2 = $habilidad2['titulo_lenguajes'];
+                  $descripcion_lenguajes2 = $habilidad2['descripcion_lenguajes'];
+                  $titulo_herramientas2 = $habilidad2['titulo_herramientas'];
+                  $descripcion_herramientas2 = $habilidad2['descripcion_herramientas'];
+
+                  $habilidad3 = get_field('habilidad_3');
+                  $skill_icono3 = $habilidad3['skill_icono']['sizes']['medium'];
+                  $skill_texto3 = $habilidad3['skill_texto'];
+                  $skill_descripcion3 = $habilidad3['skill_descripcion'];
+                  $titulo_lenguajes3 = $habilidad3['titulo_lenguajes'];
+                  $descripcion_lenguajes3 = $habilidad3['descripcion_lenguajes'];
+                  $titulo_herramientas3 = $habilidad3['titulo_herramientas'];
+                  $descripcion_herramientas3 = $habilidad3['descripcion_herramientas'];
+
+                  // echo "<pre>";
+                  // var_dump($habilidad1);
+                  // echo "</pre>";
+                  
+                ?>
+                <span class="fa-stack fa-2x">
+                  <img class="img-avatar" src="<?php echo  esc_attr($skill_icono1);?>" alt="Imagen <?php echo esc_attr($skill_icono1);?>">
+                </span>
+                <h1 class="title is-size-4 is-spaced"><?php echo esc_attr($skill_texto1); ?></h1>
+                <p><?php echo esc_attr($skill_descripcion1); ?></p>
+                <p class="list-title has-text-primary has-text-weight-normal"><?php echo esc_attr($titulo_lenguajes1); ?></p>
+                <p><?php echo esc_attr($descripcion_lenguajes1); ?></p>
+                <p class="list-title has-text-primary has-text-weight-normal"><?php echo esc_attr($titulo_herramientas1); ?></p>
                 <ul>
-                  <li>Affinity Designer</li>
-                  <li>Figma</li>
-                  <li>Pen &amp; Paper</li>
-                  <li>Sketch</li>
+                <?php echo esc_attr($descripcion_herramientas1); ?>
                 </ul>
               </div>
-              <div class="column is-size-4-mobile"><span class="fa-stack fa-2x"><svg class="svg-inline--fa fa-circle fa-stack-2x has-text-success" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path></svg><!-- <i class="fa-solid fa-circle fa-stack-2x has-text-success"></i> --><svg class="svg-inline--fa fa-square-terminal fa-stack-1x has-text-dark" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="square-terminal" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M384 64c17.7 0 32 14.3 32 32l0 320c0 17.7-14.3 32-32 32L64 448c-17.7 0-32-14.3-32-32L32 96c0-17.7 14.3-32 32-32l320 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM83.9 149.6c-5.8 6.7-5 16.8 1.7 22.6L183.4 256 85.6 339.9c-6.7 5.8-7.5 15.8-1.7 22.6s15.9 7.5 22.6 1.7l112-96c3.5-3 5.6-7.5 5.6-12.1s-2-9.1-5.6-12.1l-112-96c-6.7-5.8-16.8-5-22.6 1.7zM208 352c-8.8 0-16 7.2-16 16s7.2 16 16 16l160 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-160 0z"></path></svg><!-- <i class="fa-light fa-square-terminal fa-stack-1x has-text-dark"></i> --></span>
-                <h1 class="title is-size-4 is-spaced">Frontend Developer</h1>
-                <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-                <p class="list-title has-text-primary has-text-weight-normal">Languages I speak:</p>
-                <p>HTML, Pug, Slim, CSS, Sass, Git</p>
-                <p class="list-title has-text-primary has-text-weight-normal">Dev Tools:</p>
+              <div class="column is-size-4-mobile">
+                <span class="fa-stack fa-2x">
+                  <img class="img-avatar" src="<?php echo  esc_attr($skill_icono2);?>" alt="Imagen <?php echo esc_attr($skill_icono2);?>">
+                </span>
+                <h1 class="title is-size-4 is-spaced"><?php echo esc_attr($skill_texto2); ?></h1>
+                <p><?php echo esc_attr($skill_descripcion2); ?></p>
+                <p class="list-title has-text-primary has-text-weight-normal"><?php echo esc_attr($titulo_lenguajes2); ?></p>
+                <p><?php echo esc_attr($descripcion_lenguajes2); ?></p>
+                <p class="list-title has-text-primary has-text-weight-normal"><?php echo esc_attr($titulo_herramientas2); ?></p>
                 <ul>
-                  <li>Astro JS</li>
-                  <li>Bitbucket</li>
-                  <li>Bootstrap</li>
-                  <li>Bulma</li>
-                  <li>Codekit</li>
-                  <li>Github</li>
-                  <li>Netlify</li>
-                  <li>Tailwind CSS</li>
-                  <li>VS Code</li>
+                  <?php echo esc_attr($descripcion_herramientas2); ?>
                 </ul>
               </div>
-              <div class="column is-size-4-mobile"><span class="fa-stack fa-2x"><svg class="svg-inline--fa fa-circle fa-stack-2x has-text-success" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path></svg><!-- <i class="fa-solid fa-circle fa-stack-2x has-text-success"></i> --><svg class="svg-inline--fa fa-book fa-stack-1x has-text-dark" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="book" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M64 0C28.7 0 0 28.7 0 64L0 448s0 0 0 0c0 35.3 28.7 64 64 64l368 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-16 0 0-66.7c18.6-6.6 32-24.4 32-45.3l0-320c0-26.5-21.5-48-48-48L64 0zM384 416l0 64L64 480c-17.7 0-32-14.3-32-32s14.3-32 32-32l320 0zM64 384c-11.7 0-22.6 3.1-32 8.6L32 64c0-17.7 14.3-32 32-32l32 0 0 352-32 0zm64 0l0-352 272 0c8.8 0 16 7.2 16 16l0 320c0 8.8-7.2 16-16 16l-272 0zm48-240c0 8.8 7.2 16 16 16l160 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-160 0c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16l160 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-160 0c-8.8 0-16 7.2-16 16z"></path></svg><!-- <i class="fa-light fa-book fa-stack-1x has-text-dark"></i> --></span>
-                <h1 class="title is-size-4 is-spaced">Mentor</h1>
-                <p>I genuinely care about people, and enjoy helping them work on their craft.</p>
-                <p class="list-title has-text-primary has-text-weight-normal">Experiences I draw from:</p>
-                <p>UX/UI, Product design, Freelancing</p>
-                <p class="list-title has-text-primary has-text-weight-normal">Mentor Stats:</p>
+              <div class="column is-size-4-mobile">
+                <span class="fa-stack fa-2x">
+                  <img class="img-avatar" src="<?php echo  esc_attr($skill_icono3);?>" alt="Imagen <?php echo esc_attr($skill_icono3);?>">
+                </span>
+                <h1 class="title is-size-4 is-spaced"><?php echo esc_attr($skill_texto3); ?></h1>
+                <p><?php echo esc_attr($skill_descripcion3); ?></p>
+                <p class="list-title has-text-primary has-text-weight-normal"><?php echo esc_attr($titulo_lenguajes3); ?></p>
+                <p><?php echo esc_attr($descripcion_lenguajes3); ?></p>
+                <p class="list-title has-text-primary has-text-weight-normal"><?php echo esc_attr($titulo_herramientas3); ?></p>
                 <ul>
-                  <li>9+ years experience</li>
-                  <li>30+ short courses</li>
-                  <li>65+ bootcamps</li>
-                  <li>250+ students</li>
-                  <li>2,500+ mentor sessions</li>
-                  <li>60+ group critiques</li>
-                  <li>18,000+ bits of feedback</li>
+                  <?php echo esc_attr($descripcion_herramientas3); ?>
                 </ul>
               </div>
             </div>
@@ -226,8 +251,30 @@
   <hr>
   <section class="contenedor seccion sec-blanco pd-bot-10rem has-text-centered">
     <div class="content testimoniales">
-        <h3 class="title text-negro">Testimoniales</h3>
-        <h4 class="subtitle-testimonials">La gente con la que he trabajado me ha dicho cosas bonitas...</h4>
+
+        <?php
+
+          $testi_texto = get_field('textos_testimoniales');
+          $title_testi = $testi_texto['titulo_testimonial'];
+          $subtitle_testi = $testi_texto['subtitulo_testimonial'];
+
+          $testimonial1 = get_field('testimonial_1');
+          $img_testi1 = $testimonial1['imagen_testimonial']['sizes']['medium'];
+          $coment_testi1 = $testimonial1['coment_testi'];
+          $name_customer1 = $testimonial1['name_customer'];
+          $cargo_customer1 = $testimonial1['cargo_customer'];
+
+          $testimonial2 = get_field('testimonial_2');
+          $img_testi2 = $testimonial2['imagen_testimonial']['sizes']['medium'];
+          $coment_testi2 = $testimonial2['coment_testi'];
+          $name_customer2 = $testimonial2['name_customer'];
+          $cargo_customer2 = $testimonial2['cargo_customer'];
+
+        ?>
+
+
+        <h3 class="title text-negro"><?php echo esc_attr($title_testi); ?></h3>
+        <h4 class="subtitle-testimonials"><?php echo esc_attr($subtitle_testi); ?></h4>
         <div class="columns_1 is-centered">
             <div class="column_1 is-two-thirds">
                 <div class="testimonials-slider">
@@ -237,18 +284,18 @@
                         <div class="carousel-inner">
                             <div class="carousel-item" id="item-1">
                                 <div class="testimonial-block">
-                                    <img class="avatar" src="wp-content/themes/tylerdev/img/pascal.png">
-                                    <p class="quote">"Fue un verdadero placer trabajar con Tyler y esperamos volver a trabajar con él. Definitivamente es el tipo de diseñador en el que puedes confiar un proyecto de principio a fin".</p>
-                                    <h1 class="title is-size-5">Pascal Tremblay</h1>
-                                    <h2 class="subtitle is-size-6">Líder creativo, buen tipo</h2>
+                                    <img class="avatar" src="<?php echo  esc_attr($img_testi1);?>">
+                                    <p class="quote"><?php echo esc_attr($coment_testi1); ?></p>
+                                    <h1 class="title is-size-5"><?php echo esc_attr($name_customer1); ?></h1>
+                                    <h2 class="subtitle is-size-6"><?php echo esc_attr($cargo_customer1); ?></h2>
                                 </div>
                             </div>
                             <div class="carousel-item" id="item-2">
                                 <div class="testimonial-block">
-                                    <img class="avatar" src="wp-content/themes/tylerdev/img/alvin.png">
-                                    <p class="quote">"Tyler es un profesional excelente y de confianza, para profundizar en escenarios de diseño complicados y la fricción colaborativa que se necesita para producir un trabajo de calidad".</p>
-                                    <h1 class="title is-size-5">Alvin Engler</h1>
-                                    <h2 class="subtitle is-size-6">Director ejecutivo de West Third Enterprises, Inc.</h2>
+                                    <img class="avatar" src="<?php echo  esc_attr($img_testi2);?>">
+                                    <p class="quote"><?php echo esc_attr($coment_testi2); ?></p>
+                                    <h1 class="title is-size-5"><?php echo esc_attr($name_customer2); ?></h1>
+                                    <h2 class="subtitle is-size-6"><?php echo esc_attr($cargo_customer2); ?></h2>
                                 </div>
                             </div>
                         </div>

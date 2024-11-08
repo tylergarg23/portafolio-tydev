@@ -7,10 +7,10 @@
 ?>
   <main class="contenedor seccion contenido-centrado">
     <section class="bienvenida seccion contenedor">
-      <h1 class="text-center text-negro title">
+      <h1 class="text-center text-negro title is-size-3-mobile">
       <?php the_field('titulo_bienvenida');?>
       </h1>
-      <h4 class="text-center text-negro subtitle">
+      <h4 class="text-center text-negro subtitle is-size-4-tablet">
       <?php the_field('descripcion_mentoria');?>
       </h4>
     </section>
@@ -230,7 +230,7 @@
     </section>
 
   
-  <section class="contenedor seccion sec-blanco pd-bot-10rem">
+  <section class="contenedor seccion sec-blanco pd-bot-10rem has-text-centered">
     <div class="content testimoniales">
         <h3 class="title text-negro">Aprendices felices</h3>
         <h4 class="subtitle-testimonials">No te fíes de mi palabra cuando puedes confiar en la suya...</h4>
