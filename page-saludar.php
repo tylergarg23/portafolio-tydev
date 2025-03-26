@@ -21,6 +21,13 @@
   ?>
   </main>
 
+   <!-- Boton go top -->
+ <div class="go-top-container">
+  <div class="go-top-button">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+ </div>
+
   <?php 
     get_footer();
   ?>
