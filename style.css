@@ -1906,3 +1906,101 @@ select option:hover {
     background-color: #ffefef;
     outline: none;
 }
+
+/* Modal para Yape*/
+.custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.custom-modal.is-active {
+    display: block;
+}
+
+.custom-modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+}
+
+.custom-modal-close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.custom-modal-close:hover,
+.custom-modal-close:focus {
+    color: #000;
+}
+
+/* Bloque nuevo */
+
+.qr-yape-container {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.qr-yape-container img {
+    /* max-width: 220px; */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin: auto;
+}
+
+/* Estilos para Labels e Inputs del formulario */
+#yape-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+#yape-form input[type="text"],
+#yape-form input[type="email"],
+#yape-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#yape-form input[type="file"] {
+    padding: 6px;
+}
+
+#yape-form button[type="submit"] {
+    background-color: #5c67f2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+}
+
+#yape-form button[type="submit"]:hover {
+    background-color: #3f4bc1;
+}
