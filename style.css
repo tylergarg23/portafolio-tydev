@@ -2004,3 +2004,77 @@ select option:hover {
 #yape-form button[type="submit"]:hover {
     background-color: #3f4bc1;
 }
+
+/* Estilos para el icono de confirmación de reserva */
+
+.checkmark-container {
+    margin-top: 2rem;
+    display: inline-block;
+    text-align: center;
+    /* Centra el icono y el mensaje */
+}
+
+.checkmark-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 4px solid #4CAF50;
+    position: relative;
+    animation: scale 0.3s ease-in-out;
+    margin-bottom: 1rem;
+    /* Añadido margen para separar del texto */
+}
+
+.checkmark-stem {
+    position: absolute;
+    width: 4px;
+    height: 30px;
+    background-color: #4CAF50;
+    left: 33px;
+    top: 12px;
+    transform: rotate(45deg);
+    animation: draw 0.4s ease-out forwards;
+}
+
+.checkmark-kick {
+    position: absolute;
+    width: 4px;
+    height: 15px;
+    background-color: #4CAF50;
+    left: 33px;
+    top: 33px;
+    transform: rotate(-45deg);
+    animation: draw 0.4s ease-out 0.2s forwards;
+}
+
+.confirmacion-text {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+    /* Hacer que el texto sea más destacado */
+}
+
+/* Animación para el checkmark */
+@keyframes scale {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes draw {
+    0% {
+        width: 0;
+        height: 0;
+    }
+
+    100% {
+        width: 4px;
+        height: 30px;
+    }
+}

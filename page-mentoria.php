@@ -120,7 +120,7 @@ get_header();
             </a>
 
 
-            <!-- Modal -->
+            <!-- Modal Mentoria Puntual-->
             <div id="mentoriaModal" class="custom-modal">
               <div class="custom-modal-content">
                 <span class="custom-modal-close" id="closeModal">&times;</span>
@@ -134,9 +134,9 @@ get_header();
                   <p class="mt-2"><strong>Número de Yape:</strong> 997 890 843</p>
                 </div>
 
-                <form id="yape-form" method="POST" action="<?php echo admin_url('admin-post.php'); ?>" enctype="multipart/form-data">
-                  <input type="hidden" name="action" value="enviar_reserva_mentoria">
+                <form id="yape-form" method="POST" action="<?php echo esc_url(admin_url('admin-post.php')); ?>" enctype="multipart/form-data">
                   <input type="hidden" name="form_origen" value="mentoria_yape">
+                  <input type="hidden" name="action" value="enviar_reserva_mentoria">
 
                   <div class="field">
                     <label>Tu nombre</label>
@@ -160,12 +160,24 @@ get_header();
                     <button type="submit">Enviar y reservar</button>
                   </div>
                 </form>
+                <div id="reserva-confirmacion" style="display: none; text-align: center;">
+                  <div class="checkmark-container">
+                    <div class="checkmark-circle">
+                      <div class="checkmark-stem"></div>
+                      <div class="checkmark-kick"></div>
+                    </div>
+                    <p class="confirmacion-text">
+                      ✅ <strong>Tu reserva se ha realizado con éxito.</strong><br>
+                      Validaremos la transferencia y nos pondremos en contacto contigo para acordar las fechas de sesión.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
-
           </div>
         </div>
+
         <div class="tres_column level-item">
           <div class="box">
             <span class="fa-stack fa-2x">
@@ -182,11 +194,72 @@ get_header();
             <ul>
               <li><?php echo esc_attr($categori_mentoria2); ?></li>
             </ul>
-            <a class="button is-dark is-rounded is-medium is-fullwidth has-text-weight-normal has-text-success" href="https://buy.stripe.com/9AQaFAdwv1mmb0k5kl">
+            <!-- Botón para abrir el modal -->
+            <a href="#"
+              class="button is-dark is-rounded is-medium is-fullwidth has-text-weight-normal has-text-success open-modal"
+              data-title="<?php echo esc_attr($title_mento2); ?>"
+              data-price="<?php echo esc_attr($price_mentoria2); ?>">
               <span class="text-btn"><?php echo esc_attr($boton_mentoria2); ?></span>
             </a>
+
+            <!-- Modal Apoyo a la Producción-->
+            <div id="mentoriaModal" class="custom-modal">
+              <div class="custom-modal-content">
+                <span class="custom-modal-close" id="closeModal">&times;</span>
+
+                <h2 id="modal-title" class="title is-4 has-text-centered"></h2>
+                <h3 id="modal-price" class="subtitle is-3 has-text-centered"></h3>
+
+                <div class="field has-text-centered">
+                  <p><strong>Escanea este código QR con Yape:</strong></p>
+                  <div id="yape-qr-dynamic" class="qr-yape-container"></div>
+                  <p class="mt-2"><strong>Número de Yape:</strong> 997 890 843</p>
+                </div>
+
+                <form id="yape-form" method="POST" action="<?php echo esc_url(admin_url('admin-post.php')); ?>" enctype="multipart/form-data">
+                  <input type="hidden" name="form_origen" value="mentoria_yape">
+                  <input type="hidden" name="action" value="enviar_reserva_mentoria">
+
+                  <div class="field">
+                    <label>Tu nombre</label>
+                    <input type="text" name="nombre" required>
+                  </div>
+
+                  <div class="field">
+                    <label>Correo electrónico</label>
+                    <input type="email" name="correo" required>
+                  </div>
+
+                  <div class="field">
+                    <label>Sube tu comprobante de Yape</label>
+                    <input type="file" name="comprobante" accept="image/*" required>
+                  </div>
+
+                  <input type="hidden" name="mentoria_titulo" id="input-mentoria-title">
+                  <input type="hidden" name="mentoria_precio" id="input-mentoria-price">
+
+                  <div class="field">
+                    <button type="submit">Enviar y reservar</button>
+                  </div>
+                </form>
+                <div id="reserva-confirmacion" style="display: none; text-align: center;">
+                  <div class="checkmark-container">
+                    <div class="checkmark-circle">
+                      <div class="checkmark-stem"></div>
+                      <div class="checkmark-kick"></div>
+                    </div>
+                    <p class="confirmacion-text">
+                      ✅ <strong>Tu reserva se ha realizado con éxito.</strong><br>
+                      Validaremos la transferencia y nos pondremos en contacto contigo para acordar las fechas de sesión.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
+
         <div class="tres_column level-item">
           <div class="box">
             <span class="fa-stack fa-2x">
@@ -197,14 +270,74 @@ get_header();
               </svg><!-- <i class="fa-light fa-dice-d20 fa-stack-1x has-text-dark"></i> --></span>
             <h1 class="title is-size-4 is-spaced mt-5"><?php echo esc_attr($title_mento3); ?></h1>
             <h2 class="title price is-size-2"><?php echo esc_attr($price_mentoria3); ?></h2>
-            <p>1<?php echo esc_attr($descr_mentoria3); ?></p>
+            <p><?php echo esc_attr($descr_mentoria3); ?></p>
             <p class="list-title has-text-primary has-text-weight-bold is-family-primary is-size-6"><?php echo esc_attr($subtitle_mentoria3); ?></p>
             <ul>
               <li><?php echo esc_attr($categori_mentoria3); ?></li>
             </ul>
-            <a class="button is-dark is-rounded is-medium is-fullwidth has-text-weight-normal has-text-success" href="https://buy.stripe.com/7sIbJEdwvfdc5G08wy">
+            <!-- Botón para abrir el modal -->
+            <a href="#"
+              class="button is-dark is-rounded is-medium is-fullwidth has-text-weight-normal has-text-success open-modal"
+              data-title="<?php echo esc_attr($title_mento3); ?>"
+              data-price="<?php echo esc_attr($price_mentoria3); ?>">
               <span class="text-btn"><?php echo esc_attr($boton_mentoria3); ?></span>
             </a>
+
+            <!-- Modal Aprendizaje a medida-->
+            <div id="mentoriaModal" class="custom-modal">
+              <div class="custom-modal-content">
+                <span class="custom-modal-close" id="closeModal">&times;</span>
+
+                <h2 id="modal-title" class="title is-4 has-text-centered"></h2>
+                <h3 id="modal-price" class="subtitle is-3 has-text-centered"></h3>
+
+                <div class="field has-text-centered">
+                  <p><strong>Escanea este código QR con Yape:</strong></p>
+                  <div id="yape-qr-dynamic" class="qr-yape-container"></div>
+                  <p class="mt-2"><strong>Número de Yape:</strong> 997 890 843</p>
+                </div>
+
+                <form id="yape-form" method="POST" action="<?php echo esc_url(admin_url('admin-post.php')); ?>" enctype="multipart/form-data">
+                  <input type="hidden" name="form_origen" value="mentoria_yape">
+                  <input type="hidden" name="action" value="enviar_reserva_mentoria">
+
+                  <div class="field">
+                    <label>Tu nombre</label>
+                    <input type="text" name="nombre" required>
+                  </div>
+
+                  <div class="field">
+                    <label>Correo electrónico</label>
+                    <input type="email" name="correo" required>
+                  </div>
+
+                  <div class="field">
+                    <label>Sube tu comprobante de Yape</label>
+                    <input type="file" name="comprobante" accept="image/*" required>
+                  </div>
+
+                  <input type="hidden" name="mentoria_titulo" id="input-mentoria-title">
+                  <input type="hidden" name="mentoria_precio" id="input-mentoria-price">
+
+                  <div class="field">
+                    <button type="submit">Enviar y reservar</button>
+                  </div>
+                </form>
+                <div id="reserva-confirmacion" style="display: none; text-align: center;">
+                  <div class="checkmark-container">
+                    <div class="checkmark-circle">
+                      <div class="checkmark-stem"></div>
+                      <div class="checkmark-kick"></div>
+                    </div>
+                    <p class="confirmacion-text">
+                      ✅ <strong>Tu reserva se ha realizado con éxito.</strong><br>
+                      Validaremos la transferencia y nos pondremos en contacto contigo para acordar las fechas de sesión.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -214,7 +347,7 @@ get_header();
         <div class="tres_column">
           <h4 class="title is-spaced has-text-weight-semibold"><?php echo esc_attr($title_pre); ?></h4>
           <p class="subtitle is-size-5-desktop"><?php echo esc_attr($desc_pre); ?></p>
-          <a class="btn-read-mentoria button is-primary is-outlined is-rounded is-medium has-text-weight-normal" href="/mentorship-inquiry">
+          <a class="btn-read-mentoria button is-primary is-outlined is-rounded is-medium has-text-weight-normal" href="/saludar/">
             <span class="icon_saludo">
               <svg class="svg-inline--fa fa-hand-wave" aria-hidden="true" focusable="false" data-prefix="far" data-icon="hand-wave" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
                 <path fill="currentColor" d="M336.2 82.3L335 73.8c-3-21.1-19.6-37.7-40.7-40.7l-8.5-1.2c-8.7-1.2-14.8-9.4-13.6-18.1S281.5-1.1 290.3 .2l8.5 1.2c35.2 5 62.9 32.7 67.9 67.9l1.2 8.5c1.2 8.7-4.8 16.9-13.6 18.1s-16.9-4.8-18.1-13.6zM80 68.7c17.9-17.9 43.8-23 66.2-15.2c3.1-6.8 7.4-13.1 13-18.7c25-25 65.5-25 90.5 0L368 153l0-5.2c0-35.3 28.7-64 64-64s64 28.7 64 64l0 157.7c0 1.6 0 3.1-.1 4.7c0 .6 .1 1.1 .1 1.7c0 109.9-88.7 199.2-198.5 200l-.5 0-1 0s0 0 0 0l-6.6 0c-53 0-103.9-21.1-141.4-58.6L34.7 340.2c-25-25-25-65.5 0-90.5c3.9-3.9 8.2-7.2 12.7-9.9l-1.4-1.4c-25-25-25-65.5 0-90.5c5.6-5.6 11.9-9.9 18.7-13C57 112.5 62.1 86.6 80 68.7zm79.3 56.7l-.1-.1-22.6-22.6c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6l22.5 22.5 .1 .1L232.7 244c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-96.1-96.1c0 0 0 0-.1-.1c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6L119.5 244l.1 .1 56.6 56.6c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L91.4 283.7l-.1-.1c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6L181.9 419.5C210.4 448 249.1 464 289.4 464l6.6 0s0 0 0 0l.6 0 .2 0c82.8-.5 149.9-67.1 151.1-149.8c-.1-1-.1-2.1-.1-3.1c.1-1.8 .1-3.6 .1-5.5l0-157.7c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 63.1c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2L215.8 68.7c-6.2-6.2-16.4-6.2-22.6 0c-6.2 6.2-6.2 16.3-.1 22.6l96.2 96.2c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-96.1-96.1zM13.7 368.2c8.7-1.3 16.9 4.8 18.1 13.6l1.2 8.5c3 21.1 19.6 37.7 40.7 40.7l8.5 1.2c8.7 1.2 14.8 9.4 13.6 18.1s-9.4 14.8-18.1 13.6l-8.5-1.2c-35.2-5-62.9-32.7-67.9-67.9L.2 386.3c-1.2-8.7 4.8-16.9 13.6-18.1z"></path>

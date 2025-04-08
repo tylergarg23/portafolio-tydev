@@ -153,6 +153,9 @@ function procesar_reserva_mentoria()
     }
   }
 
+  // 🔧 DEFINIR el enlace al QR de Yape
+  $qr_yape_link = 'http://tylerdev.test:8080/wp-content/uploads/2025/03/cod-yape.png';
+
   // 📩 Enviar correo
   $to = get_option('admin_email');
   $subject = 'Nueva reserva de mentoría';
@@ -167,7 +170,7 @@ function procesar_reserva_mentoria()
 
   wp_mail($to, $subject, $message, $headers);
 
-  // Guardar en CPT (opcional)
+  // Guardar en CPT
   wp_insert_post(array(
     'post_type'   => 'reserva_mentoria',
     'post_title'  => 'Reserva de ' . $nombre,
@@ -181,10 +184,6 @@ function procesar_reserva_mentoria()
       'qr_link'     => $qr_yape_link
     )
   ));
-
-  // Redirige a una página de gracias (o puedes dejarlo en la home)
-  wp_redirect(home_url('/gracias-por-reservar'));
-  exit;
 }
 
 function crear_cpt_reservas_mentoria()
