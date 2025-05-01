@@ -193,7 +193,7 @@ function crear_cpt_reservas_mentoria()
       'name' => 'Reservas de Mentoría',
       'singular_name' => 'Reserva de Mentoría',
     ),
-    'public' => false,
+    'public' => true, //false
     'show_ui' => true,
     'supports' => array('title'),
     'menu_icon' => 'dashicons-calendar-alt',
@@ -230,7 +230,9 @@ function mostrar_contenido_columnas_reservas($column, $post_id)
     case 'comprobante':
       $url = esc_url(get_post_meta($post_id, 'comprobante', true));
       if ($url) {
-        echo '<a href="' . $url . '" target="_blank">Ver</a>';
+        echo '<a href="' . $url . '" target="_blank">
+                <img src="' . $url . '" style="max-height:50px;" alt="Ver Comprobante" />
+              </a>';
       } else {
         echo 'No adjunto';
       }
