@@ -323,6 +323,8 @@ get_header();
                     <button type="submit">Enviar y reservar</button>
                   </div>
                 </form>
+
+                <!-- Mensaje de confirmación -->
                 <div id="reserva-confirmacion" style="display: none; text-align: center;">
                   <div class="checkmark-container">
                     <div class="checkmark-circle">

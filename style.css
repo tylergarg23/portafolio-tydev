@@ -2323,7 +2323,7 @@ DRIBBBLE: https://dribbble.com/shots/4330167-404-Page-Lost-In-Space
 */
 }
 
-.earth-moon {}
+/*.earth-moon {}*/
 
 .object_astronaut {
     animation: rotate-astronaut 200s infinite linear both alternate;

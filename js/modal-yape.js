@@ -16,6 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function (e) {
       e.preventDefault();
 
+      // Restaurar estado del formulario
+      document.getElementById("yape-form").reset(); // Limpia campos
+      document.getElementById("yape-form").style.display = "block"; // Muestra el formulario
+      document.getElementById("reserva-confirmacion").style.display = "none"; // Oculta confirmación
+
       const title = this.getAttribute("data-title");
       const priceText = this.getAttribute("data-price");
       const price = priceText.replace(/[^\d.]/g, ""); // Elimina todo excepto números y punto

@@ -213,7 +213,7 @@ function agregar_columnas_reservas($columns)
   return $columns;
 }
 
-// Mostrar el contenido de las columnas personalizadas
+// Mostrar el contenido de las columnas personalizadas en el listado del CPT Panel WordPress
 add_action('manage_reserva_mentoria_posts_custom_column', 'mostrar_contenido_columnas_reservas', 10, 2);
 function mostrar_contenido_columnas_reservas($column, $post_id)
 {
