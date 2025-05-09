@@ -131,7 +131,7 @@ get_header();
                 <div class="field has-text-centered">
                   <p><strong>Escanea este código QR con Yape:</strong></p>
                   <div id="yape-qr-dynamic" class="qr-yape-container"></div>
-                  <p class="mt-2"><strong>Número de Yape:</strong> 997 890 843</p>
+                  <!-- <p class="mt-2"><strong>Número de Yape:</strong> 997 890 843</p> -->
                 </div>
 
                 <form id="yape-form" method="POST" action="<?php echo esc_url(admin_url('admin-post.php')); ?>" enctype="multipart/form-data">
@@ -140,24 +140,36 @@ get_header();
 
                   <div class="field">
                     <label>Tu nombre</label>
-                    <input type="text" name="nombre" required>
+                    <input id="nombre" type="text" name="nombre" required>
+                    <span class="error" id="error-nombre"></span>
                   </div>
 
                   <div class="field">
                     <label>Correo electrónico</label>
-                    <input type="email" name="correo" required>
+                    <input id="email" type="email" name="correo" required>
+                    <span class="error" id="error-email"></span>
                   </div>
 
                   <div class="field">
                     <label>Sube tu comprobante de Yape</label>
-                    <input type="file" name="comprobante" accept="image/*" required>
+                    <input id="file" type="file" name="comprobante" accept="image/*" required>
+                    <span class="error" id="error-file"></span>
                   </div>
 
                   <input type="hidden" name="mentoria_titulo" id="input-mentoria-title">
                   <input type="hidden" name="mentoria_precio" id="input-mentoria-price">
 
                   <div class="field">
-                    <button type="submit">Enviar y reservar</button>
+                    <button type="submit" class="btn-enviar-reserva opacity-50">
+                      <span class="btn-text">Enviar y reservar</span>
+                      <span class="btn-spinner" style="display: none;">
+                        <div class="rectangle-bounce">
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                        </div>
+                      </span>
+                    </button>
                   </div>
                 </form>
                 <div id="reserva-confirmacion" style="display: none; text-align: center;">
@@ -239,7 +251,7 @@ get_header();
                   <input type="hidden" name="mentoria_precio" id="input-mentoria-price">
 
                   <div class="field">
-                    <button type="submit">Enviar y reservar</button>
+                    <button type="submit" class="opacity-50">Enviar y reservar</button>
                   </div>
                 </form>
                 <div id="reserva-confirmacion" style="display: none; text-align: center;">
@@ -320,7 +332,7 @@ get_header();
                   <input type="hidden" name="mentoria_precio" id="input-mentoria-price">
 
                   <div class="field">
-                    <button type="submit">Enviar y reservar</button>
+                    <button type="submit" class="opacity-50">Enviar y reservar</button>
                   </div>
                 </form>
 

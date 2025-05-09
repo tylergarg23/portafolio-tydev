@@ -1990,20 +1990,34 @@ select option:hover {
 }
 
 #yape-form button[type="submit"] {
-    background-color: #5c67f2;
+    background-color: #5C3469;
     color: white;
     border: none;
     padding: 12px 20px;
     border-radius: 8px;
     font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
     width: 100%;
 }
 
-#yape-form button[type="submit"]:hover {
-    background-color: #3f4bc1;
+.custom-modal-content .field .opacity-50{
+    opacity: 0.5;
 }
+
+.error {
+    background: red;
+    color: white;
+    font-size: 14px;
+    display: block;
+    margin-top: 4px;
+}
+
+.btn-text{
+    margin: auto;
+}
+
+/* #yape-form button[type="submit"]:hover {
+    background-color: #3f4bc1;
+} */
 
 /* Estilos para el icono de confirmación de reserva */
 
@@ -2431,4 +2445,44 @@ DRIBBBLE: https://dribbble.com/shots/4330167-404-Page-Lost-In-Space
     color: #fff;
     margin-top: 1rem;
     margin-bottom: 2rem;
+}
+
+/*Spinner de carga*/
+.rectangle-bounce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.rectangle-bounce div {
+    width: 4px;
+    height: 16px;
+    background-color: white;
+    animation: bounce 1.2s infinite ease-in-out;
+}
+
+.rectangle-bounce div:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.rectangle-bounce div:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+.rectangle-bounce div:nth-child(3) {
+    animation-delay: 0s;
+}
+
+@keyframes bounce {
+
+    0%,
+    80%,
+    100% {
+        transform: scaleY(0.4);
+    }
+
+    40% {
+        transform: scaleY(1);
+    }
 }

@@ -139,7 +139,7 @@ function procesar_reserva_mentoria()
 
   // Variables del formulario
   $nombre    = sanitize_text_field($_POST['nombre']);
-  $correo    = sanitize_email($_POST['correo']);
+  $correo    = strtolower(sanitize_email($_POST['correo']));
   $mentoria = sanitize_text_field($_POST['mentoria_titulo']);
   $precio    = sanitize_text_field($_POST['mentoria_precio']);
 
@@ -177,7 +177,7 @@ function procesar_reserva_mentoria()
     'post_status' => 'publish',
     'meta_input'  => array(
       'nombre'      => $nombre,
-      'correo'      => $correo,
+      'correo'      => strtolower($correo),
       'mentoria'    => $mentoria,
       'precio'      => $precio,
       'comprobante' => $comprobante_url,
